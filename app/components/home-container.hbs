@@ -1,0 +1,48 @@
+<div local-class="info">
+    <h1>Olivia's Restaurant</h1>
+    {{!-- insert image --}}
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor 
+        in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+    <h1>Hours & Location</h1>
+    <p local-class="phone-address">(555) 123-0000 <br> 123 Not Real St. <br> Eugene, OR 97401</p> 
+</div>
+<img src='/images/burger-scene.jpg' alt="burger" local-class="burger-image" />
+<div local-class="menu">
+    <h1>Menu</h1>
+    <p local-class="menu-side-description">All Burgers and Kids meals come with a side of french fries.</p>
+    <h2>Appetizeres</h2>
+    {{#each this.appetizeres as |appetizer|}}
+        <div local-class="item">
+            <p>{{appetizer.name}}</p>
+            <p>${{appetizer.price}}</p>   
+        </div>
+    {{/each}}
+    <h2>Burgers</h2>
+    {{#each this.burgers as |burger|}}
+        <div local-class="item">
+            <p>{{burger.name}}</p>
+            <p>${{burger.price}}</p>   
+        </div>
+    {{/each}}
+    <h2>Salads</h2>
+    {{#each this.salads as |salad|}}
+        <div local-class="item">
+            <p>{{salad.name}}</p>
+            <p>${{salad.price}}</p>   
+        </div>
+    {{/each}}
+    <h2>Kids</h2>
+    {{#each this.kids as |kidItem|}}
+        <div local-class="item">
+            <p>{{kidItem.name}}</p>
+            <p>${{kidItem.price}}</p>   
+        </div>
+    {{/each}}
+</div>
+
+

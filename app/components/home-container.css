@@ -1,0 +1,32 @@
+body {
+    background-color: black;
+    font-family: 'Bitter', serif;
+    line-height: 1.6;
+}
+
+h1, h2, .phone-address, .menu-side-description {
+    text-align: center;
+}
+
+.info {
+    color:aliceblue;
+
+}
+
+.menu {
+    background-color: rgb(231, 224, 216);
+}
+
+.burger-image {
+    background-image: url();
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+}
